@@ -110,7 +110,11 @@ The proposed framework consists of the following stages:
 
 ## Repository Structure
 ```bash
-├── train/          # Training Dataset
-├── validation/           # Validation Dataset
-├── source code/         # Image cropping, Training script (PyTorch), Real-time inference pipeline and Model conversion pipeline
+├── train/              # Training dataset (organized by class)
+├── validation/         # Validation dataset (organized by class)
+├── src/                # Source code
+│   ├── preprocessing/  # Image cropping and preprocessing scripts
+│   ├── training/       # Model training scripts (PyTorch)
+│   ├── inference/      # Real-time inference pipeline
+│   └── conversion/     # Model conversion and quantization pipeline
 └── README.md
